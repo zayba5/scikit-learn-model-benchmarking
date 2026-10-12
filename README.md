@@ -227,8 +227,6 @@ Potential visualizations include:
 * Probability calibration plots
 * Classification threshold comparisons
 
-No performance numbers are included here because results should be generated from the actual implementation rather than estimated or invented.
-
 ## Limitations
 
 * The datasets are relatively small and may not represent the full complexity of real-world prediction problems.
