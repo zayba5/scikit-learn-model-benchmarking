@@ -212,101 +212,6 @@ Evaluate the selected models on the held-out test data and summarize the results
 * **Git and GitHub** for version control and project hosting
 * **Visual Studio Code** as the development environment
 
-## Repository Structure
-
-The project is intended to use a modular structure rather than keeping all code in a single notebook.
-
-```text
-scikit-learn-model-benchmarking/
-├── README.md
-├── requirements.txt
-├── .gitignore
-├── src/
-│   ├── __init__.py
-│   ├── data.py
-│   ├── preprocessing.py
-│   ├── regression.py
-│   ├── classification.py
-│   ├── evaluation.py
-│   └── plotting.py
-├── scripts/
-│   └── run_experiments.py
-├── tests/
-│   └── test_metrics.py
-├── results/
-│   └── figures/
-└── reports/
-    └── findings.md
-```
-
-This structure is a planned layout. Files, scripts, tests, and results should be marked as implemented only after they have actually been created and verified.
-
-## Installation
-
-### Prerequisites
-
-Install the following software before running the project:
-
-* Python
-* Git
-* Visual Studio Code (recommended)
-
-### 1. Clone the Repository
-
-Replace `YOUR-USERNAME` with your GitHub username.
-
-```bash
-git clone https://github.com/YOUR-USERNAME/scikit-learn-model-benchmarking.git
-cd scikit-learn-model-benchmarking
-```
-
-### 2. Create a Virtual Environment
-
-On Windows using PowerShell:
-
-```powershell
-py -m venv .venv
-.venv\Scripts\Activate.ps1
-```
-
-On macOS or Linux:
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
-
-### 3. Install Dependencies
-
-After creating `requirements.txt`, install the dependencies with:
-
-```bash
-python -m pip install -r requirements.txt
-```
-
-The project is expected to use packages such as:
-
-```text
-numpy
-pandas
-matplotlib
-scikit-learn
-xgboost
-```
-
-## Usage
-
-The intended workflow is to run the experiment script, compare model metrics, generate visualizations, and review the findings.
-
-Once the implementation is complete, the workflow should be documented with the actual commands used to run the experiments.
-
-For example, if the script is implemented with this entry point:
-
-```bash
-python scripts/run_experiments.py
-```
-
-The script should load the datasets, execute the experiments, and save the configured outputs. This command is a planned example and will work only after the corresponding script has been implemented.
 
 ## Results and Visualizations
 
@@ -323,17 +228,6 @@ Potential visualizations include:
 * Classification threshold comparisons
 
 No performance numbers are included here because results should be generated from the actual implementation rather than estimated or invented.
-
-## Reproducibility
-
-The project aims to make experiments repeatable by:
-
-* Using documented dataset-loading procedures
-* Keeping training, validation, and test data separate
-* Applying preprocessing consistently
-* Recording model configurations and evaluation metrics
-* Setting random seeds where supported
-* Tracking the software dependencies used for experiments
 
 ## Limitations
 
@@ -362,7 +256,3 @@ Possible extensions include:
 2. Scikit-learn, [Breast Cancer Wisconsin (Diagnostic) Dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_breast_cancer.html).
 3. University of Wisconsin, [Breast Cancer Wisconsin (Diagnostic) Dataset](https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic).
 4. Scikit-learn, [Model Evaluation](https://scikit-learn.org/stable/modules/model_evaluation.html).
-
-## License
-
-A license has not yet been selected. Add a license after deciding how the project will be shared and confirming that any course-related code or materials may be redistributed.
